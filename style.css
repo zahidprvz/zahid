@@ -281,34 +281,33 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
-.portfolio .box-container {
+
+.box-container1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-.portfolio .box-container .box {
-    height: 20rem;
-    width: 26rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.portfolio .box-container .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.portfolio .box-container .box img:hover {
-    transform: scale(1.2);
-}
-
-.contact .row {
+    justify-content: center;
+  }
+  
+  .box1 {
+    background-color: var(--yellow);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    
+  }
+  
+  .box1 a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .box1 a:hover {
+    color: #0077b6;
+  }.contact .row {
     display: flex;
     align-items: center;
     justify-content: center;
