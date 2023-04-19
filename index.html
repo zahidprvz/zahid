@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahid Parviz - Portfolio</title>
+
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- javascript library link for popup messages -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('RzkdNka2Z1Gf5hVrt');
+        })();
+
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the EmailJS dashboard.
+                emailjs.sendForm('service_dnx139j', 'template_3v8i70f', this)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        swal({
+                            title: "Success!",
+                            text: "Your message has been sent successfully!",
+                            icon: "success",
+                            button: "OK",
+                        });
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        swal({
+                            title: "Error!",
+                            text: "An error occurred while sending your message. Please try again later.",
+                            icon: "error",
+                            button: "OK",
+                        });
+                    });
+
+            });
+        }
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- header section starts here -->
+
+    <header>
+
+        <div class="user">
+            <img src="Images/ProfilePic.jpg" alt="Profile Picture">
+
+            <h3 class="name">Zahid Parviz</h3>
+            <p class="post">Computer Scientist</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends here -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+
+    <!-- home section starts here -->
+
+    <section class="home" id="home">
+
+        <h3>Hi there !</h3>
+        <h1>I'm <span>zahid parviz</span></h1>
+        <p>a Computer Science student at the University of Gujrat with a passion for exploring the world of Artificial
+            Intelligence. Zahid is keen to expand his knowledge and skills in AI and apply them to real-world problems.
+            With a goal to create impactful solutions using AI, Zahid is determined to push boundaries and make a
+            difference. Keep an eye out for Zahid, as he takes on exciting challenges and continues to grow as an AI
+            enthusiast!
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends here -->
+
+    <!-- about section starts here -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> zahid parviz </h3>
+                <h3> <span> age : </span> 21 </h3>
+                <h3> <span> qualification : </span> Bachelors </h3>
+                <h3> <span> currently : </span> Bachelors </h3>
+                <h3> <span> language : </span> English, Urdu, Punjabi </h3>
+                <a href="resume.pdf"><button class="btn"> download CV <i class="fas fa-download"></i></button></a>
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>20+</span>
+                    <h3>projects completed</h3>
+                </div>
+
+                <div class="box">
+                    <span>5+</span>
+                    <h3>programming languages</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends here -->
+
+
+    <!-- education section starts here -->
+
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2017-2018</span>
+                <h3>Matric</h3>
+                <p>Studied Matric in Biology at the Albadar Misaali Public Hight School, Wazirabad, Pakistan</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019-2020</span>
+                <h3>Intermediate</h3>
+                <p>Studied Intermediate in Computer Science at the Punjab College, Wazirabad, Pakistan</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020-2024</span>
+                <h3>Computer Science</h3>
+                <p>Studied Bachelors in Computer Science at the University of Gujrat, Gujrat, Pakistan</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>Desktop Application Development</h3>
+                <p>Leanred about Desktop Application Development in C# .NET at the University of Gujrat, Gujrat,
+                    Pakistan</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>Mobile Application Development</h3>
+                <p>Leanred about Mobile Application Development in Java from <a
+                        href="https://www.coursera.org/account/accomplishments/verify/9ES5KKT37YQH?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course">Coursera</a>
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>Artificial Intelligence</h3>
+                <p>Leanred about Artificial Intelligence from <a
+                        href="https://www.coursera.org/account/accomplishments/certificate/UWEV7QPUAJJB">Coursera</a>
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- education section ends here -->
+
+
+    <!-- portfolio section starts here -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="https://zpmughal.github.io/SquareGuessingGame/" target="_blank">
+                    <img src="Images/pic1.jpg" alt="Project Picture">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/zpmughal/QuizApplication" target="_blank">
+                    <img src="Images/pic2.jpg" alt="Project Picture">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/zpmughal/Next_Word_Prediction" target="_blank">
+                    <img src="Images/pic3.jpg" alt="Project Picture">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/zpmughal/E-Voting-Application-Final" target="_blank">
+                    <img src="Images/pic4.png" alt="Project Picture">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/zpmughal/GuessingGameJava" target="_blank">
+                    <img src="Images/pic5.jpg" alt="Project Picture">
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- contact section starts here -->
+
+    <section class="contact" id="contact">
+
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> pervaizzahid55@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +923324621731 </h3>
+                    <h3> <i class="fas fa-map-marked-alt"></i> wazirabad, pakistan </h3>
+                </div>
+
+                <form id="contact-form">
+                    <input type="text" name="from_name" placeholder="name" class="box">
+                    <input type="email" name="from_email" placeholder="email" class="box">
+                    <input type="text" name="subject" placeholder="Topic" class="box">
+                    <textarea name="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                    <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- contact section ends here -->
+
+
+    <!-- scroll top button -->
+    <a href="#home" class="top">
+        <img src="Images/pic6.png" alt="" style="height: 50px; width: 50px">
+    </a>
+
+
+
+    <!-- portfolio section ends here -->
+
+
+    <!-- JavaScript files Links Here -->
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
