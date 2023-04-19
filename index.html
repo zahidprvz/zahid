@@ -29,7 +29,7 @@
       // these IDs from the EmailJS dashboard.
       emailjs.sendForm('service_dnx139j', 'template_3v8i70f', this)
         .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
+          console.alert('SUCCESS!', response.status, response.text);
           // display a success notification message
           var message = document.createElement('div');
           message.classList.add('notification');
@@ -37,7 +37,7 @@
           message.textContent = 'Your message has been sent successfully!';
           document.body.appendChild(message);
         }, function(error) {
-          console.log('FAILED...', error);
+          console.alert('FAILED...', error);
           // display an error notification message
           var message = document.createElement('div');
           message.classList.add('notification');
