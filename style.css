@@ -307,7 +307,9 @@ header .navbar ul li a:hover {
   
   .box1 a:hover {
     color: #0077b6;
-  }.contact .row {
+  }
+
+.contact .row {
     display: flex;
     align-items: center;
     justify-content: center;
