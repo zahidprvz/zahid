@@ -11,10 +11,7 @@
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- javascript library link for popup messages -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
+    
 
     <!-- css file link -->
     <link rel="stylesheet" href="style.css">
@@ -22,36 +19,35 @@
 
 
     <script type="text/javascript">
-        (function () {
-            emailjs.init('RzkdNka2Z1Gf5hVrt');
-        })();
+  (function() {
+    emailjs.init('RzkdNka2Z1Gf5hVrt');
+  })();
 
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the EmailJS dashboard.
-                emailjs.sendForm('service_dnx139j', 'template_3v8i70f', this)
-                    .then(function (response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        swal({
-                            title: "Success!",
-                            text: "Your message has been sent successfully!",
-                            icon: "success",
-                            button: "OK",
-                        });
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                        swal({
-                            title: "Error!",
-                            text: "An error occurred while sending your message. Please try again later.",
-                            icon: "error",
-                            button: "OK",
-                        });
-                    });
-
-            });
-        }
-    </script>
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // these IDs from the EmailJS dashboard.
+      emailjs.sendForm('service_dnx139j', 'template_3v8i70f', this)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          // display a success notification message
+          var message = document.createElement('div');
+          message.classList.add('notification');
+          message.classList.add('success');
+          message.textContent = 'Your message has been sent successfully!';
+          document.body.appendChild(message);
+        }, function(error) {
+          console.log('FAILED...', error);
+          // display an error notification message
+          var message = document.createElement('div');
+          message.classList.add('notification');
+          message.classList.add('error');
+          message.textContent = 'An error occurred while sending your message. Please try again later.';
+          document.body.appendChild(message);
+        });
+    });
+  }
+</script>
 
 
 
