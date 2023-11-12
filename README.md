@@ -1,5 +1,3 @@
-Creating a well-structured README for your GitHub repository is essential to help visitors and potential collaborators understand your project. Here's a template for your personal portfolio website repository README:
-
 # My Personal Portfolio Website
 
 
@@ -7,7 +5,7 @@ Creating a well-structured README for your GitHub repository is essential to hel
 
 Welcome to my personal portfolio website! This repository contains the source code for my online portfolio, showcasing my skills, projects, and resume. The website is built using HTML, CSS, and JavaScript, and it includes a contact form powered by the EmailJS library/API for easy communication.
 
-Check out the live website [here](https://zpmughal.github.io/zahid/).
+Check out the live website [here](https://zahidparviz.github.io/zahid/).
 
 ## Table of Contents
 
@@ -40,7 +38,7 @@ Before you start, ensure you have met the following requirements:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/zpmughal/zahid.git
+   git clone https://github.com/zahidparviz/zahid.git
    ```
 
 2. Open the project folder in your code editor.
@@ -70,5 +68,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [EmailJS](https://www.emailjs.com/) - Used for email functionality.
 - [GitHub Pages](https://pages.github.com/) - Hosting the website.
 - [Unsplash](https://unsplash.com/) - Images used in the project.
-
----
