@@ -5,7 +5,7 @@
 
 Welcome to my personal portfolio website! This repository contains the source code for my online portfolio, showcasing my skills, projects, and resume. The website is built using HTML, CSS, and JavaScript, and it includes a contact form powered by the EmailJS library/API for easy communication.
 
-Check out the live website [here](https://zahidparviz.github.io/zahid/).
+Check out the live website [here](https://zahidprvz.github.io/zahid/).
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ Before you start, ensure you have met the following requirements:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/zahidparviz/zahid.git
+   git clone https://github.com/zahidprvz/zahid.git
    ```
 
 2. Open the project folder in your code editor.
